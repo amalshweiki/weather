@@ -1,16 +1,17 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import './App.css'
 import Home from "./pages/Home";
-import Header from './components/Header';
+
 import Forcast from "./pages/Forcast";
 import Favorites from './pages/Favorites';
 import SignIn from "./pages/SignIn";
+import SharedLayOut from "./components/SharedLayOut";
 function App() {
  
   const Router=createBrowserRouter([
     {
       path:'/',
-      element:<Header/>,
+      element:<SharedLayOut/>,
       children:[
         {
           path:'/',

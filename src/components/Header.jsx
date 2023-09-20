@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <Link to='favorites'> Favorite </Link>
       <Link to='forcast'> Forcast </Link>
       <Link to='signin'>Sign In </Link>
-      <Outlet/>
+      
     </div>
   )
 }
