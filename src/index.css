@@ -2,60 +2,80 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.header {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 70px;
+  padding-top: 30px;
+  font-size: 26px;
+  font-weight: bold;
 }
-a:hover {
-  color: #535bf2;
+.link {
+  text-decoration: none;
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 30px;
 }
-
-body {
-  margin: 0;
+.link:hover {
+  color: rgb(15, 145, 188);
+}
+.contanier {
+  text-align: center;
+  padding-top: 100px;
+}
+#search-input {
+  font-size: 20px;
+}
+#search-button {
+  margin-left: 20px;
+  font-size: 20px;
+  background-color: #78bacb;
+  border-radius: 10px;
+  color: white;
+}
+.table {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: #78bacb;
+}
+table {
+  margin-top: 20px;
+}
+th,
+td {
+  border: 1px solid #78bacb;
+  padding: 10px;
+  text-align: left;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+th {
+  background-color: #a8cfde;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.mytable {
+  display: none;
 }
-button:hover {
-  border-color: #646cff;
+.sign-form {
+  text-align: center;
+  padding-top: 100px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: #78bacb;
 }
-
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -66,4 +86,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
